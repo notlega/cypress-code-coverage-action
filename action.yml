@@ -1,0 +1,9 @@
+name: 'Cypress code coverage'
+description: 'Runs cypress tests and outputs code coverage'
+author: 'notlega'
+inputs:
+  null: 
+    description: 'null'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

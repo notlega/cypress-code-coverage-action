@@ -1,0 +1,35 @@
+{
+  "name": "cypress-code-coverage-action",
+  "version": "1.0.0",
+  "description": "A reusable GitHub Action that runs Cypress tests and outputs the coverage",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx tsc",
+		"format": "prettier --write **/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notlega/cypress-code-coverage-action.git"
+  },
+  "author": "onghinjourn@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notlega/cypress-code-coverage-action/issues"
+  },
+  "homepage": "https://github.com/notlega/cypress-code-coverage-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.9.5"
+  }
+}
