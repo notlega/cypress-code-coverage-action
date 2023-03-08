@@ -4,4 +4,6 @@ COPY . .
 
 RUN npm install --production
 
-ENTRYPOINT ["node", "/dist/main.js"]
+RUN npm run build
+
+ENTRYPOINT ["node", "/dist/index.js"]
